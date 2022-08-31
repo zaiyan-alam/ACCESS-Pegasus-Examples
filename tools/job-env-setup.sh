@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# uncomment for debugging
-#/bin/env
+# this file is use sources when the job starts up and
+# used to provide a common environment for jobs across
+# ACCESS resources
 
 export PATH=/usr/bin:/bin
 export USER=`whoami`
 
 hostname=`hostname -f`
-#hostname="c455-002.stampede2.tacc.utexas.edu"
 stampede_pattern='^[A-Za-z0-9-]+.stampede2.tacc.utexas.edu$'
 expanse_pattern='^[A-Za-z0-9-]+.expanse.sdsc.edu$'
 

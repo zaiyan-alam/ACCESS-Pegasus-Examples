@@ -47,32 +47,32 @@ def parse_args(args):
 
 
 if __name__ == "__main__":
-  args = parse_args(sys.argv[1:])
-  unet = UNet(args)
-  config = {}
-  with open(os.path.join(args.input_dir, args.params_file), 'r') as f:
+    args = parse_args(sys.argv[1:])
+    unet = UNet(args)
+    config = {}
+    with open(os.path.join(args.input_dir, args.params_file), 'r') as f:
     config = eval(f.read())['params']
 
-  BACKBONE = 'seresnet34'
-  preprocess_input = get_preprocessing(BACKBONE)
-  model = sm.Unet(BACKBONE, input_shape=(256,256,3), 
-  encoder_weights='imagenet', decoder_block_type='transpose')
+    BACKBONE = 'seresnet34'
+    preprocess_input = get_preprocessing(BACKBONE)
+    model = sm.Unet(BACKBONE, input_shape=(256,256,3), 
+    encoder_weights='imagenet', decoder_block_type='transpose')
 
-  w_path = os.path.join(unet.args.output_dir, "model_tmp.h5")
-  path = os.path.join(unet.args.output_dir, "model.h5")
+    w_path = os.path.join(unet.args.output_dir, "model_tmp.h5")
+    path = os.path.join(unet.args.output_dir, "model.h5")
 
-  checkpoint_callback = ModelCheckpoint(w_path, monitor='loss', mode="min", save_best_only=True)
-  early_stopping = EarlyStopping( monitor='loss', min_delta=0, patience=4)
-  callbacks = [checkpoint_callback, early_stopping] 
+    checkpoint_callback = ModelCheckpoint(w_path, monitor='loss', mode="min", save_best_only=True)
+    early_stopping = EarlyStopping( monitor='loss', min_delta=0, patience=4)
+    callbacks = [checkpoint_callback, early_stopping] 
 
-  # Compile the U-Net model
-  model.compile(optimizer=Adam(lr=config['lr']), loss=unet.dice_coef_loss, metrics = [iou_score, 'accuracy'])
+    # Compile the U-Net model
+    model.compile(optimizer=Adam(lr=config['lr']), loss=unet.dice_coef_loss, metrics = [iou_score, 'accuracy'])
 
-  # Call DataLoader function to get train and validation dataset
-  train_vol, train_seg, valid_vol, valid_seg = unet.DataLoader()
+    # Call DataLoader function to get train and validation dataset
+    train_vol, train_seg, valid_vol, valid_seg = unet.DataLoader()
 
-  # Train the U-Net model
-  history = model.fit(
+    # Train the U-Net model
+    history = model.fit(
               x = train_vol, 
               y = train_seg, 
               batch_size = unet.args.batch_size, 
@@ -80,12 +80,12 @@ if __name__ == "__main__":
               callbacks=callbacks,
               validation_data =(valid_vol, valid_seg))
 
-  # model.save(w_path)
+    # model.save(w_path)
 
-  pdf_path = os.path.join(args.output_dir, 'Analysis.pdf')
+    pdf_path = os.path.join(args.output_dir, 'Analysis.pdf')
 
-  #generate analysis results
-  pdf = GeneratePDF()
-  pdf.create(unet, pdf_path, history)   
-  os.replace(w_path, path)
+    #generate analysis results
+    pdf = GeneratePDF()
+    pdf.create(unet, pdf_path, history)   
+    os.replace(w_path, path)
 

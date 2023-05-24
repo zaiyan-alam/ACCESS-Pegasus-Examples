@@ -55,7 +55,7 @@ This chapter gives a quick overview of Pegasus and it's Python API, along with t
   * Using the Pegasus API to generate an abstract workflow
   * Using the API to plan the abstract workflow into an executable workflow
   * Pegasus catalogs for sites, transformations, and data
-<img src="/images/catalogs.png" style="width: 450px;"/>
+<img src="/images/catalogs.png" align="center" style="width: 450px;"/>
 
 Debugging
 =========
@@ -95,7 +95,7 @@ Orca Sound
 ==========
 The [Ocean Observatories Initiative (OOI)](https://oceanobservatories.org/), through a network of sensors, supports critical research in ocean science and marine life. [Orcasound](https://www.orcasound.net/) is a community driven project that leverages hydrophone sensors deployed in **three locations** in the state of **Washington** (San Juan Island, Point Bush, and Port Townsend as shown in the figure below) in order to study Orca whales in the Pacific Northwest region. Throughout the course of this workflow, code to process and analyze the hydrophone data has been developed, and machine learning models have been trained to automatically identify the whistles of the Orcas. All of the code is available publicly on GitHub, and the hydrophone data are free to access, stored in an **AWS S3** bucket. In this paper, we have developed an Orcasound workflow using Pegasus. This version of the pipeline is based on the [Orcasound GitHub actions](https://github.com/orcasound/orca-action-workflow) workflow, and incorporates inference components of the [OrcaHello AI](https://github.com/orcasound/aifororcas-livesystem) notification system.
 
-<img src="/Artificial-Intelligence/OrcaSound/images/ml_steps2.png" align="center" style="width: 500px;"/>
+<img src="/Artificial-Intelligence/OrcaSound/images/ml_steps2.png" style="width: 500px;"/>
 
 Astronomy
 =========

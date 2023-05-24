@@ -44,17 +44,21 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
   <img src="MaskDetection/imgs/ml_steps3.png" style="width: 850px;"/>
 </p>
 
+<div align="center">
+
 | Job Label              | Description                                                    |
 | -----------------------|----------------------------------------------------------------|
-| preprocess_val         | data preprocessing for the validation set of images            |
-| preprocess_test        | data preprocessing for the testing set of images               |
-| preprocess_aug_train   | data augmentation of the training set images                   |
-| plot_class_distribution| data exploration step to visualize class distribution          |
-| hpo                    | hyperparameter optimization step for FastRCNN model            |
-| train_model            | training the FastRCNN model and fine-tuning it                 |
-| evaluate               | generates relevant performance metrics like running loss       |
-| predict                | make final prediction for mask detection on a given input image|
+| `preprocess_val`         | data preprocessing for the validation set of images            |
+| `preprocess_test`        | data preprocessing for the testing set of images               |
+| `preprocess_aug_train`   | data augmentation of the training set images                   |
+| `plot_class_distribution`| data exploration step to visualize class distribution          |
+| `hpo`                    | hyperparameter optimization step for FastRCNN model            |
+| `train_model`            | training the FastRCNN model and fine-tuning it                 |
+| `evaluate`               | generates relevant performance metrics like running loss       |
+| `predict`               | make final prediction for mask detection on a given input image|
 
+</div> 
+  
 Orca Sound
 ==========
 This workflow processes and analyzes the hydrophone data of sensors from **three locations** in the state of **Washington**, and uses trained machine learning models to automatically identify the whistles of the Orcas.

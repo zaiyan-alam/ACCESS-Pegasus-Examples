@@ -97,7 +97,7 @@ Lung Segmentation
 =================
 Precise detection of the borders of organs and lesions in medical images such as X-rays, CT, or MRI scans is an essential step towards correct diagnosis and treatment planning. We implement a workflow that employs supervised learning techniques to locate lungs on X-ray images. Lung instance segmentation workflow uses [Chest X-ray](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/) for predicting lung masks from the images using [U-Net](https://arxiv.org/abs/1505.04597) model.
 <p align="center">
-  <img src="/Artificial-Intelligence/LungSegmentation/img/segmentation.png" style="width: 850px;"/>
+  <img src="/Artificial-Intelligence/LungSegmentation/img/segmentation.png" style="width: 450px;"/>
 </p>
 
 

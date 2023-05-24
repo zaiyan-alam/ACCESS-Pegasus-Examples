@@ -46,12 +46,15 @@ In Jupyter, navigate to the example you are interested in, and step through the 
 Pegasus Tutorial
 ================
 
-Pegasus tutorial notebook, which is intended for new users who want to get a quick overview of Pegasus concepts and usage. This tutorial covers some of the following chapters:
+Pegasus tutorial notebook, which is intended for new users who want to get a quick overview of Pegasus concepts and usage. This tutorial covers some of the following 4 chapters:
 
 Introduction API
 ================
 
 This chapter gives a quick overview of Pegasus and it's Python API, along with the information regarding ACCESS resources supported by it.
+* Using the Pegasus API to generate an abstract workflow
+* Using the API to plan the abstract workflow into an executable workflow
+* Pegasus catalogs for sites, transformations, and data
 
 Debugging
 =========

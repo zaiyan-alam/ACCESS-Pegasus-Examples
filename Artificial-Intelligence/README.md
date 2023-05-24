@@ -40,7 +40,11 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
 * wearing a mask incorrectly
 
 <p align="center">
-  <img src="/Artificial-Intelligence/MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
+  <img src="MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
+</p>
+
+<p align="center">
+  <img src="MaskDetection/imgs/wf_graph2.png" style="width: 450px;"/>
 </p>
 
 **Machine Learning steps in the workflow :**

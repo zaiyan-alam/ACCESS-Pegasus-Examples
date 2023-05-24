@@ -78,7 +78,7 @@ Throughout the course of this project, code to process and analyze the hydrophon
 </p>
 
 <p align="center">
-  <img src="OrcaSound/images/orcasound-workflow.png" style="width: 350px;"/>
+  <img src="OrcaSound/images/orcasound-workflow.png" style="width: 450px;"/>
 </p>
 
 **Machine Learning steps in the workflow :**

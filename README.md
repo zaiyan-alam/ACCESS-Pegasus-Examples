@@ -52,9 +52,9 @@ Introduction API
 ================
 
 This chapter gives a quick overview of Pegasus and it's Python API, along with the information regarding ACCESS resources supported by it.
-* Using the Pegasus API to generate an abstract workflow
-* Using the API to plan the abstract workflow into an executable workflow
-* Pegasus catalogs for sites, transformations, and data
+  * Using the Pegasus API to generate an abstract workflow
+  * Using the API to plan the abstract workflow into an executable workflow
+  * Pegasus catalogs for sites, transformations, and data
 
 Debugging
 =========

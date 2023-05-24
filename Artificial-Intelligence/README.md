@@ -43,7 +43,7 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
   <img src="MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
 </p>
 
-<div align="center">
+<div class="background: white;" align="center">
   <img src="MaskDetection/imgs/wf_graph2.png" style="width: 450px;" style="background-color:red;"/>
 </div>
 

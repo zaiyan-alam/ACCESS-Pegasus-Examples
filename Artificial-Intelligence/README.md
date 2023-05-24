@@ -41,7 +41,7 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
 
 **Machine Learning steps in the workflow :**
 <p align="center">
-  <img src="LungSegmentation/imgs/ml_steps3.png" style="width: 850px;"/>
+  <img src="MaskDetection/imgs/ml_steps3.png" style="width: 850px;"/>
 </p>
 
 | Job Label              | Description                                                    |

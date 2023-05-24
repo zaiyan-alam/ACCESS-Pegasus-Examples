@@ -68,7 +68,11 @@ When running complex computations (such as workflows) on complex computing infra
 
 Command Line Tools
 ==================
-Running Pegasus is in a Jupyter notebook is very convenient for tutorials and for smaller workflows, but production workflows are most commonly submitted on dedicated HTCondor submit nodes using command line tools. This chapter of the tutorial uses command line tools for planning, submitting and checking status of a workflow generated in a notebook.
+Running Pegasus in a Jupyter notebook is very convenient for tutorials and for smaller workflows, but production workflows are most commonly submitted on dedicated HTCondor submit nodes using command line tools. This chapter of the tutorial uses command line tools for planning, submitting and checking status of a workflow generated in a notebook. The command line tools are discussed in the notebook : 
+* `pegasus-status -v [wfdir]` Provides status on a workflow instance
+* `pegasus-analyzer [wfdir]` Provides debugging clues why a workflow failed. Run this after a workflow has failed
+* `pegasus-statistics [wfdir]` Provides statistics, such as walltimes, on a workflow after it has completed
+* `pegasus-remove [wfdir]` Removes a workflow from the system
 
 
 Summary

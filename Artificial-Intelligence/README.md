@@ -11,7 +11,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 
 **Machine Learning steps in the workflow :**
 <p align="center">
-  <img src="LungSegmentation/img/ml_steps.png" style="width: 450px;"/>
+  <img src="LungSegmentation/img/ml_steps.png" style="width: 750px;"/>
 </p>
 
 Mask Detection

@@ -29,7 +29,12 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 
 Mask Detection
 ==============
-The workflow addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. It uses the FastRCNNPredictor deep learning model to detect masks on faces.
+The following project addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. To help solve this problem, we leverage modern deep learning tools such as the Optuna hyper parameter optimization framework and the [FastRCNNPredictor](https://arxiv.org/abs/1506.01497) model. The experiment is organized as a scientific workflow and utilizes the Pegasus Workflow Management System to handle its execution on distributed resources. 
+The workflow uses **images of masks on faces** and **annotations** related to each image as classified as one of the following **three categories** as the main input dataset:
+* wearing a mask 
+* not wearing a mask
+* wearing a mask incorrectly
+
 <p align="center">
   <img src="/Artificial-Intelligence/MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
 </p>

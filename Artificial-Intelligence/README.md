@@ -72,6 +72,16 @@ Throughout the course of this project, code to process and analyze the hydrophon
 
 **Machine Learning steps in the workflow :**
 <p align="center">
-  <img src="OrcaSound/imgs/ml_steps2.png" style="width: 850px;"/>
+  <img src="OrcaSound/images/ml_steps2.png" style="width: 850px;"/>
 </p>
 
+<div align="center">
+
+|       ML step               | Job Label             | Description                                      |
+| :--------------------------:| :--------------------:|:------------------------------------------------:|
+| Data Preprocessing          | `convert2wav`         | converts the input hydrophone data to WAV format |
+| Data Preprocessing          | `convert2spectrogram` | converts the WAV output to spectrogram images    |
+| Model Inference             | `inference`           | identifies the sound using a pretrained ML model |
+| Model Inference             | `merge predictions`   | merges the predictions from all sensors          |
+  
+</div>

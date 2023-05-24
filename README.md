@@ -34,7 +34,7 @@ To get started, use a web browser and log in to https://access.pegasus.isi.edu .
 From there, start a shell by clicking the menu (Clusters > Shell), and check out the repostitory:
 
 <p align="center">
-  <img src="/images/terminal-start.png" style="width: 300px;"/>
+  <img src="/images/terminal-start.png" style="width: 200px;"/>
 </p>
 
 ```

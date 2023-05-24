@@ -119,7 +119,7 @@ This workflow processes and analyzes the hydrophone data of sensors from **three
 
 Astronomy
 =========
-The purpose of the examples in this is to illustrate the use of the Pegasus workflows for parallelization of astronomical processing jobs.
+The purpose of the examples in this is to illustrate the use of the Pegasus workflows for parallelization of astronomical data processing jobs. 
 
 Montage
 =======

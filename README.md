@@ -113,7 +113,7 @@ Orca Sound
 ==========
 This workflow processes and analyzes the hydrophone data of sensors from **three locations** in the state of **Washington**, and uses trained machine learning models to automatically identify the whistles of the Orcas.
 <p align="center">
-  <img src="/Artificial-Intelligence/OrcaSound/images/orca_sound_sensors.png" style="width: 450px;"/>
+  <img src="/Artificial-Intelligence/OrcaSound/images/orca_sound_sensors.png" style="width: 350px;"/>
 </p>
 
 

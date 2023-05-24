@@ -105,7 +105,7 @@ Mask Detection
 ==============
 The workflow addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. It uses the FastRCNNPredictor deep learning model to detect masks on faces.
 <p align="center">
-  <img src="/Artificial-Intelligence/MaskDetection/imgs/sample_output.png" style="width: 500px;"/>
+  <img src="/Artificial-Intelligence/MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
 </p>
 
 

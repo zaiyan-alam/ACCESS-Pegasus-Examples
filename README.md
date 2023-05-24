@@ -55,6 +55,7 @@ This chapter gives a quick overview of Pegasus and it's Python API, along with t
   * Using the Pegasus API to generate an abstract workflow
   * Using the API to plan the abstract workflow into an executable workflow
   * Pegasus catalogs for sites, transformations, and data
+<img src="/images/catalogs.png" style="width: 850px;"/>
 
 Debugging
 =========

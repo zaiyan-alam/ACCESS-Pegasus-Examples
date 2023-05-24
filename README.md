@@ -86,7 +86,7 @@ This chapter covers information regarding how to get in touch with our team, cit
 
 Workflow Examples
 =================
-The following examples cover workflows related to various domains as follows:
+Pegasus is curently being used in a broad range of scientific domains. This repository contains the workflow notebooks corresponding to various domains listed here, each notebook shown here is using actual data and executables. This page gives a brief overview of each of the workflow, for more details please go to corresponding folder.
 
 
 Artificial Intelligence

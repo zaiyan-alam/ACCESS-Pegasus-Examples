@@ -14,6 +14,15 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
   <img src="LungSegmentation/img/ml_steps.png" style="width: 800px;"/>
 </p>
 
+| Job Label         | Description                                              |
+| ------------------|----------------------------------------------------------|
+| preprocess_test   | data preprocessing for the testing set of x-ray images   |
+| preprocess_val    | data preprocessing for the validation set of x-ray images|
+| hpo               | hyperparameter optimization step for UNet model          |
+| train_model       | training the UNet model and fine-tuning it               |
+| predict_masks     | predicting the lung masks                                |
+| evaluate          | generates scores for relevant performance metrics        |
+
 Mask Detection
 ==============
 The workflow addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. It uses the FastRCNNPredictor deep learning model to detect masks on faces.

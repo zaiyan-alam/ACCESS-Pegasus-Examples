@@ -14,6 +14,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
   <img src="LungSegmentation/img/ml_steps.png" style="width: 850px;"/>
 </p>
 
+<div align="center">
 
 | ML step | Job Label         | Description                                              |
 | --------| :------------------:|----------------------------------------------------------|
@@ -24,6 +25,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 | Model Inference| `predict_masks`     | predicting the lung masks                                |
 | Model Evaluation| `evaluate`          | generates scores for relevant performance metrics        |
 
+</div>
 
 Mask Detection
 ==============

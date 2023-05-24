@@ -10,7 +10,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 </p>
 
 <p align="center">
-  <img src="/Artificial-Intelligence/LungSegmentation/img/workflow.png" style="width: 650px;"/>
+  <img src="/Artificial-Intelligence/LungSegmentation/img/workflow.png" style="width: 450px;"/>
 </p>
 
 **Machine Learning steps in the workflow :**

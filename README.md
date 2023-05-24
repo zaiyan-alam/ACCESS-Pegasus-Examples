@@ -33,8 +33,9 @@ Getting started
 To get started, use a web browser and log in to https://access.pegasus.isi.edu . Use your ACCESS credentials to log in and start a Jupyter notebook
 From there, start a shell by clicking the menu (Clusters > Shell), and check out the repostitory:
 
-![Shell Access In Jupyter](./images/terminal-start.png)
-
+<p align="center">
+  <img src="/images/terminal-start.png" style="width: 300px;"/>
+</p>
 
 ```
 $ git clone https://github.com/pegasus-isi/ACCESS-Pegasus-Examples.git

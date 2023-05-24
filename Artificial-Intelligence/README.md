@@ -14,6 +14,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
   <img src="LungSegmentation/img/ml_steps.png" style="width: 850px;"/>
 </p>
 
+<p align="center">
 | ML step | Job Label         | Description                                              |
 | --------| ------------------|----------------------------------------------------------|
 | DATA PREPROCESSING| `preprocess_test`   | data preprocessing for the testing set of x-ray images   |
@@ -22,6 +23,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 | --------| `train_model`       | training the UNet model and fine-tuning it               |
 | --------| `predict_masks`     | predicting the lung masks                                |
 | --------| `evaluate`          | generates scores for relevant performance metrics        |
+</p>
 
 Mask Detection
 ==============

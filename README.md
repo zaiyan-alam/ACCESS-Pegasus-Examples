@@ -91,11 +91,11 @@ Pegasus is curently being used in a broad range of scientific domains. This repo
 
 Artificial Intelligence
 =======================
-Consists of Machine Learning workflows, with examples showing various steps in a conventional ml-pipeline namely from data-preprocessing to inference.
+Consists of Machine Learning workflows, with examples showing various steps in a conventional machine learning pipeline (data-preprocessing, model training, model evaluation, model inference etc).
 
 Lung Segmentation
 =================
-Precise detection of the borders of organs and lesions in medical images such as X-rays, CT, or MRI scans is an essential step towards correct diagnosis and treatment planning. We implement a workflow that employs supervised learning techniques to locate lungs on X-ray images. Lung instance segmentation workflow uses [Chest X-ray](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/) for predicting lung masks from the images using [U-Net](https://arxiv.org/abs/1505.04597) model.
+We implement a workflow that employs supervised learning techniques to locate lungs on X-ray images. Lung instance segmentation workflow uses Chest X-ray images for predicting lung masks from the images using U-Net model.
 <p align="center">
   <img src="/Artificial-Intelligence/LungSegmentation/img/segmentation.png" style="width: 450px;"/>
 </p>
@@ -103,8 +103,11 @@ Precise detection of the borders of organs and lesions in medical images such as
 
 Mask Detection
 ==============
-The workflow addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. To help solve this problem, it leverages modern deep learning tools such as the Optuna hyper parameter optimization framework and the [FastRCNNPredictor](https://arxiv.org/abs/1506.01497) model. The experiment is organized as a scientific workflow and utilizes the Pegasus Workflow Management System to handle its execution on distributed resources. 
-<img src="/Artificial-Intelligence/MaskDetection/imgs/ml_steps3.png" style="width: 900px;"/>
+The workflow addresses the problem of determining what percentage of the population is properly wearing masks to better track our collective efforts in preventing the spread of COVID-19 in public spaces. It uses the FastRCNNPredictor deep learning model to detect masks on faces.
+<p align="center">
+  <img src="/Artificial-Intelligence/MaskDetection/imgs/sample_output.png" style="width: 500px;"/>
+</p>
+
 
 Orca Sound
 ==========

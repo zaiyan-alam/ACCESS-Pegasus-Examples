@@ -2,7 +2,9 @@ This section consists of Machine Learning workflows, with examples showing vario
 
 Lung Segmentation
 =================
-We implement a workflow that employs supervised learning techniques to locate lungs on X-ray images. Lung instance segmentation workflow uses Chest X-ray images for predicting lung masks from the images using U-Net model.
+Precise detection of the borders of organs and lesions in medical images such as X-rays, CT, or MRI scans is an essential step towards correct diagnosis and treatment planning. We implement a workflow that employs supervised learning techniques to locate lungs on X-ray images. Lung instance segmentation workflow uses [Chest X-ray](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/) for predicting lung masks from the images using [U-Net](https://arxiv.org/abs/1505.04597) model.
+
+The workflow uses a **Chest X-ray Masks** and Labels dataset (high-resolution X-ray images and masks) availabe publicly. The dataset is split into training, validation, and test sets before the workflow starts. Each set consists of original lung images and their associated masks. The **Pre-processing** step and Data Augmentation of Images is done to resize images (lungs and masks) and normalize lung X-rays. Additionally, for each pair of lung image and mask in the train dataset, two new pairs are generated through **image augmentation** (e.g., rotations, flips). Next, the train and validation data are passed to the UNet **hyperparameter optimization** step, where different learning rates are explored. The **training** of UNet fine-tunes the UNet model with the recommended learning rate on the concatenated train and validation set, and obtains the weights. Then **inference** on Unet is done using the trained model to generate masks for the test X-ray images. Finally, the **evaluation** is performed in order to generate a PDF file with the scores for relevant performance metrics and prints examples of lung segmentation images produced by the model.
 <p align="center">
   <img src="/Artificial-Intelligence/LungSegmentation/img/segmentation.png" style="width: 450px;"/>
 </p>

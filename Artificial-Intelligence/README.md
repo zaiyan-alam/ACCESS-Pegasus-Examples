@@ -46,16 +46,16 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
 
 <div align="center">
 
-| Job Label              | Description                                                    |
-| -----------------------|----------------------------------------------------------------|
-| `preprocess_val`         | data preprocessing for the validation set of images            |
-| `preprocess_test`        | data preprocessing for the testing set of images               |
-| `preprocess_aug_train`   | data augmentation of the training set images                   |
-| `plot_class_distribution`| data exploration step to visualize class distribution          |
-| `hpo`                    | hyperparameter optimization step for FastRCNN model            |
-| `train_model`            | training the FastRCNN model and fine-tuning it                 |
-| `evaluate`               | generates relevant performance metrics like running loss       |
-| `predict`               | make final prediction for mask detection on a given input image|
+|       ML step               | Job Label                | Description                                                    |
+| :--------------------------:| :-----------------------:|:--------------------------------------------------------------:|
+| Data Preprocessing          | `preprocess_val`         | data preprocessing for the validation set of images            |
+| Data Preprocessing          | `preprocess_test`        | data preprocessing for the testing set of images               |
+| Data Preprocessing          | `preprocess_aug_train`   | data augmentation of the training set images                   |
+| Data Preprocessing          | `plot_class_distribution`| data exploration step to visualize class distribution          |
+| Hyper-Parameter Optimization| `hpo`                    | hyperparameter optimization step for FastRCNN model            |
+| Model Training              | `train_model`            | training the FastRCNN model and fine-tuning it                 |
+| Model Evaluation            | `evaluate`               | generates relevant performance metrics like running loss       |
+| Model Inference             | `predict`               | make final prediction for mask detection on a given input image|
 
 </div> 
   

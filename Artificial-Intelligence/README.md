@@ -17,12 +17,12 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 
 | ML step | Job Label         | Description                                              |
 | --------| ------------------|----------------------------------------------------------|
-| DATA PREPROCESSING| `preprocess_test`   | data preprocessing for the testing set of x-ray images   |
-| HYPER-PARAMETER OPTIMIZATION| `preprocess_val`   | data preprocessing for the validation set of x-ray images|
-| --------| `hpo`               | hyperparameter optimization step for UNet model          |
-| --------| `train_model`       | training the UNet model and fine-tuning it               |
-| --------| `predict_masks`     | predicting the lung masks                                |
-| --------| `evaluate`          | generates scores for relevant performance metrics        |
+| Data Preprocessing| `preprocess_test`   | data preprocessing for the testing set of x-ray images   |
+| Data Preprocessing| `preprocess_val`   | data preprocessing for the validation set of x-ray images|
+| Hyper-Parameter Optimization| `hpo`               | hyperparameter optimization step for UNet model          |
+| Model Training| `train_model`       | training the UNet model and fine-tuning it               |
+| Model Inference| `predict_masks`     | predicting the lung masks                                |
+| Model Evaluation| `evaluate`          | generates scores for relevant performance metrics        |
 
 
 Mask Detection

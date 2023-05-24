@@ -14,14 +14,14 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
   <img src="LungSegmentation/img/ml_steps.png" style="width: 800px;"/>
 </p>
 
-| Job Label         | Description                                              |
-| ------------------|----------------------------------------------------------|
-| preprocess_test   | data preprocessing for the testing set of x-ray images   |
-| preprocess_val    | data preprocessing for the validation set of x-ray images|
-| hpo               | hyperparameter optimization step for UNet model          |
-| train_model       | training the UNet model and fine-tuning it               |
-| predict_masks     | predicting the lung masks                                |
-| evaluate          | generates scores for relevant performance metrics        |
+| ML step | Job Label         | Description                                              |
+| --------| ------------------|----------------------------------------------------------|
+| --------| preprocess_test   | data preprocessing for the testing set of x-ray images   |
+| --------| preprocess_val    | data preprocessing for the validation set of x-ray images|
+| --------| hpo               | hyperparameter optimization step for UNet model          |
+| --------| train_model       | training the UNet model and fine-tuning it               |
+| --------| predict_masks     | predicting the lung masks                                |
+| --------| evaluate          | generates scores for relevant performance metrics        |
 
 Mask Detection
 ==============

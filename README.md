@@ -79,6 +79,9 @@ Running Pegasus in a Jupyter notebook is very convenient for tutorials and for s
 Summary
 ===============
 This chapter covers information regarding how to get in touch with our team, citing Pegasus in your work and contains other useful contact information too.
+<p align="center">
+  <img src="/images/pegasus-slide.png" style="width: 450px;"/>
+</p>
 
 
 Workflow Examples

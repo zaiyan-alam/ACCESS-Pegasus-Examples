@@ -6,11 +6,11 @@ Precise detection of the borders of organs and lesions in medical images such as
 
 The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution X-ray images and masks) availabe publicly. The dataset is split into training, validation, and test sets before the workflow starts. Each set consists of original lung images and their associated masks. The ***Pre-processing*** step and Data Augmentation of Images is done to resize images (lungs and masks) and normalize lung X-rays. Additionally, for each pair of lung image and mask in the train dataset, two new pairs are generated through ***image augmentation*** (e.g., rotations, flips). Next, the train and validation data are passed to the UNet ***hyperparameter optimization*** step, where different learning rates are explored. The ***training*** of UNet fine-tunes the UNet model with the recommended learning rate on the concatenated train and validation set, and obtains the weights. Then ***inference*** on Unet is done using the trained model to generate masks for the test X-ray images. Finally, the ***evaluation*** is performed in order to generate a PDF file with the scores for relevant performance metrics and prints examples of lung segmentation images produced by the model.
 <p align="center">
-  <img src="/Artificial-Intelligence/LungSegmentation/img/segmentation.png" style="width: 550px;"/>
+  <img src="LungSegmentation/img/segmentation.png" style="width: 550px;"/>
 </p>
 
 <p align="center">
-  <img src="/Artificial-Intelligence/LungSegmentation/img/workflow.png" style="width: 400px;"/>
+  <img src="LungSegmentation/img/workflow.png" style="width: 400px;"/>
 </p>
 
 **Machine Learning steps in the workflow :**

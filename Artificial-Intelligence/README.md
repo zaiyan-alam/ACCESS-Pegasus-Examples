@@ -16,7 +16,7 @@ The workflow uses a ***Chest X-ray Masks*** and Labels dataset (high-resolution 
 
 
 | ML step | Job Label         | Description                                              |
-| --------| ------------------|----------------------------------------------------------|
+| --------| :------------------:|----------------------------------------------------------|
 | Data Preprocessing| `preprocess_test`   | data preprocessing for the testing set of x-ray images   |
 | Data Preprocessing| `preprocess_val`   | data preprocessing for the validation set of x-ray images|
 | Hyper-Parameter Optimization| `hpo`               | hyperparameter optimization step for UNet model          |

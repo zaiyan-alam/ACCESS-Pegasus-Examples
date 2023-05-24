@@ -43,9 +43,9 @@ The workflow uses **images of masks on faces** and **annotations** related to ea
   <img src="MaskDetection/imgs/sample_output.png" style="width: 450px;"/>
 </p>
 
-<p align="center">
+<div align="center">
   <img src="MaskDetection/imgs/wf_graph2.png" style="width: 450px;" style="background-color:red;"/>
-</p>
+</div>
 
 **Machine Learning steps in the workflow :**
 <p align="center">
@@ -74,7 +74,7 @@ The [Ocean Observatories Initiative (OOI)](https://oceanobservatories.org/), thr
 Throughout the course of this project, code to process and analyze the hydrophone data has been developed, and machine learning models have been trained to automatically identify the whistles of the Orcas. All of the code is available publicly on GitHub, and the hydrophone data are free to access, stored in an **AWS S3** bucket. In this paper, we have developed an Orcasound workflow using Pegasus. This version of the pipeline is based on the [Orcasound GitHub actions](https://github.com/orcasound/orca-action-workflow) workflow, and incorporates inference components of the [OrcaHello AI](https://github.com/orcasound/aifororcas-livesystem) notification system.
 
 <p align="center">
-  <img src="/Artificial-Intelligence/OrcaSound/images/orca_sound_sensors.png" style="width: 350px;"/>
+  <img src="OrcaSound/images/orca_sound_sensors.png" style="width: 350px;"/>
 </p>
 
 

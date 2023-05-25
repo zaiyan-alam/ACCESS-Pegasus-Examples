@@ -59,7 +59,7 @@ This chapter gives a quick overview of Pegasus and it's Python API, along with t
   * Pegasus catalogs for sites, transformations, and data
  
 <p align="center">
-  <img src="/images/catalogs.png" style="width: 450px;"/>
+  <img src="/images/catalogs.png" style="width: 400px;"/>
 </p>
 
 

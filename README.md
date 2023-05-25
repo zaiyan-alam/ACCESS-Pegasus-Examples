@@ -124,9 +124,9 @@ The purpose of the examples in this is to illustrate the use of the Pegasus work
 
 Montage
 =======
-This workflow exhibits a standard flow to the processing of a collection of images to make a mosaic. Using Montage processing tools, we create a mosaic of M17 (the Omega Nebula, 1 degree x 1 degree, in the 2MASS J-band):[From Wikipedia](https://en.wikipedia.org/wiki/Omega_Nebula). The Omega Nebula (M17) is between 5,000 and 6,000 light-years from Earth and it spans some 15 light-years in diameter.
+This workflow exhibits a standard flow to the processing of a collection of images to make a mosaic. Using Montage processing tools, we create a mosaic of M17 (the Omega Nebula, 1 degree x 1 degree, in the 2MASS J-band). The [Omega Nebula](https://en.wikipedia.org/wiki/Omega_Nebula) (M17) is between 5,000 and 6,000 light-years from Earth and it spans some 15 light-years in diameter.
 <p align="center">
-  <img src="/Astronomy/Montage/images/M17_location.png" style="width: 350px;"/>
+  <img src="/Astronomy/Montage/images/M17_location.png" style="width: 250px;"/>
 </p>
 
 Bioinformatics

@@ -125,6 +125,9 @@ The purpose of the examples in this is to illustrate the use of the Pegasus work
 Montage
 =======
 This workflow exhibits a standard flow to the processing of a collection of images to make a mosaic. Using Montage processing tools, we create a mosaic of M17 (the Omega Nebula, 1 degree x 1 degree, in the 2MASS J-band):[From Wikipedia](https://en.wikipedia.org/wiki/Omega_Nebula). The Omega Nebula (M17) is between 5,000 and 6,000 light-years from Earth and it spans some 15 light-years in diameter.
+<p align="center">
+  <img src="/Astronomy/Montage/images/M17_location.png" style="width: 350px;"/>
+</p>
 
 Bioinformatics
 ==============
@@ -132,7 +135,7 @@ Bioinformatics
 Variant Calling
 ===============
 Pegasus Workflow corresponding to the  [Automating a Variant Calling Workflow](https://datacarpentry.org/wrangling-genomics/05-automation/index.html) 
-from Data Carpentry Lesson [Data Wrangling and Processing for Genomics](https://datacarpentry.org/wrangling-genomics/).This workflow downloads and aligns SRA data to the E. coli  REL606 reference genome, and checks what differences exist in our reads versus the genome. The workflow also performs perform  variant calling to see how the population changed over time.
+from Data Carpentry Lesson [Data Wrangling and Processing for Genomics](https://datacarpentry.org/wrangling-genomics/). This workflow downloads and aligns SRA data to the E. coli  REL606 reference genome, and checks what differences exist in our reads versus the genome. The workflow also performs perform  variant calling to see how the population changed over time.
 
 Rosetta
 =======

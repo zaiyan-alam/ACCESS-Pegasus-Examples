@@ -22,7 +22,8 @@ Table of contents
          * [Montage](#montage) 
       * [Bioinformatics](#bioinformatics)
          * [Rosetta](#rosetta)
-         * [Alphafold](#alphafold) 
+         * [Alphafold](#alphafold)
+         * [Variant Calling](#variant-calling) 
 <!--te-->
 
 
@@ -128,8 +129,18 @@ This workflow exhibits a standard flow to the processing of a collection of imag
 Bioinformatics
 ==============
 
+Variant Calling
+===============
+Pegasus Workflow corresponding to the  [Automating a Variant Calling Workflow](https://datacarpentry.org/wrangling-genomics/05-automation/index.html) 
+from Data Carpentry Lesson [Data Wrangling and Processing for Genomics](https://datacarpentry.org/wrangling-genomics/).This workflow downloads and aligns SRA data to the E. coli  REL606 reference genome, and checks what differences exist in our reads versus the genome. The workflow also performs perform  variant calling to see how the population changed over time.
+
 Rosetta
 =======
+This is a Pegasus workflow for running Rosetta's De novo structure prediction on the OSG. The workflow predicts the 3-dimensional structure of a protein starting with an amino acid sequence, using the [Abinitio Relax](https://new.rosettacommons.org/docs/latest/application_documentation/structure_prediction/abinitio-relax#algorithm) algorithm.
 
 Alphafold
 =========
+A Pegasus Workflow for running [Alphafold](https://github.com/deepmind/alphafold) model's inference pipeline regarding protein structure
+prediction. The current workflow is regarding the Multiple Sequence Alignment (MSA) and 
+Feature Generation steps, which produce a `features.pkl` file that can be later used in protein structure inference
+stage using the Alphafold model parameters.
